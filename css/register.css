@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection { 
+    background: #9f3647; /*Color rojo para el fondo*/
+    color:#fff;  /*Color blanco para el texto seleccionado*/
+}
+
+/********* SCROLL **********/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #9f3647;
+}
+::-webkit-scrollbar-track {
+    background: #171717;
+}
+
+body{
+    background-color: #181419;
+    background: linear-gradient(to right top, #24242473, #24242473), url(../assets/img/bg-register.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+}
+header{
+    padding: 20px;
+}
+header > a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+header > a:hover{
+    animation: tilt-shaking 0.3s infinite;
+}
+main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+   
+}
+section{
+    background-color: #2a2a2a;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    height: 510px;
+    padding: 20px 50px;
+    border-radius: 4px;
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+label{
+    display: flex;
+    margin-left: 0;
+
+}
+input,select{
+    padding: 0 10px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    outline: none;
+    border-radius: 20px;
+    height: 35px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    transition: 0.3s ease 0s;
+}
+input:hover,select:hover,button:hover{
+    box-shadow: rgb(159, 54, 71) 0px 0px 8px 4px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    accent-color: #9f3647;
+}
+ span{
+    font-size: 13px;
+ }
+ button{
+    align-self: center;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    background-color: #9f3647;
+    border: 2px solid #9f3647;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease 0s;
+    font-family: 'Nunito', sans-serif;
+
+ }
+ form > a {
+    color: #787878;
+    text-decoration: none;
+    font-size: 13px;
+ }
+
+ @media (min-width: 500px) {
+
+    section{
+        width: initial;
+    }
+ }
+
+ @keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(7deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-7deg); }
+    100% { transform: rotate(0deg); }
+  }

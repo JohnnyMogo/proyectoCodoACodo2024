@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81dd4e50cd.js" crossorigin="anonymous"></script>
+    <title>Registrarse</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><i class="fa-solid fa-film"></i> CAC-Movies</a>
+    </header>
+    <main>
+        <section data-aos="zoom-in" data-aos-duration="1000">
+            <h1>Registro</h1>
+            <form action="" method="post">
+                <label>
+                    <input placeholder="Nombre" name="name" type="text" name="" id="name" required>
+                </label>
+                <label>
+                    <input placeholder="Apellido" name="lastname" type="text" name="" id="lastname" required>
+                </label>
+                <label>
+                    <input placeholder="Correo" type="email" name="email" id="email" required>
+                </label>
+                <label>
+                    <input placeholder="Contraseña" type="password" name="password" id="password" required>
+                </label>
+                <label>
+                    <input type="date" name="date" id="date" required>
+                </label>
+                <select name="country" id="country" required>
+                    <option value="">País</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CH">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>Acepto términos y condiciones</span>
+                </label>
+                <button type="submit">Registrarse</button>
+                <a href="#" target="_blank" rel="noopener noreferrer">¿Necesitas Ayuda?</a>
+            </form>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
+</body>
+</html>
