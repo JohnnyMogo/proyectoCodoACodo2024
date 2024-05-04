@@ -101,7 +101,6 @@ nav {
 
     .botonesNav {
 
-        margin-right: 10px;
         padding: 5px 14px;
 
         a {
@@ -469,10 +468,15 @@ footer {
         flex-direction: column;
         font-size: 1rem;
 
+       .botonesNav {
+        padding: 5px 10px;
+       }
+
         .inicio {
             font-size: 1.2rem;
             
         }
+        
 
     }
 
